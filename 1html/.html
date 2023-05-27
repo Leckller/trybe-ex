@@ -13,9 +13,9 @@
 <body>
     <div id="header">
         <div id="header-text">
-            
+
             <h1>Anotações!!!</h1>
-            
+
 
             <h3> Todas tags html abaixo </h3>
             <ul class="listas">
@@ -34,7 +34,7 @@
                 <li><a href="#br">TAG br</a></li>
                 <li><a href="#a">TAG a</a></li>
                 <li><a href="#img">TAG img</a></li>
-                <li><a href="#style">TAG style</a></li>
+                <li><a href="#style-text">TAG style</a></li>
                 <li><a href="#id">TAG id | class</a></li>
                 <li><a href="#colors">TAGS colors</a></li>
                 <li><a href="#font">TAGS font</a></li>
@@ -45,117 +45,149 @@
             </ul>
         </div>
     </div>
+
     <div id="header-img">
         <img id="header-img-style" src="img/estrela" alt="">
     </div>
 
-    <p>- Temos as tags de conteiner e linha, respectivamente se chamam <strong id="div">"div"</strong> e
-        <strong>"span"</strong>, onde a tag "div" cria um conteiner separando os itens
-        um em cima do outro, já o "span" separa dentro de uma linha atribuindo um valor apenas onde está a tag e
-        seguindo
-        normalmente a string após o fechamento da tag "span".
-        Segue o exemplo:
-    </p>
+    <div class="allTexts">
+        <h2 id="div"> Div | Span</h2>
+        <div class="Textos">
+            <p>- Temos as tags de conteiner e linha, respectivamente se chamam <strong>"div"</strong> e
+                <strong>"span"</strong>, onde a tag "div" cria um conteiner separando os itens
+                um em cima do outro, já o "span" separa dentro de uma linha atribuindo um valor apenas onde está a tag e
+                seguindo
+                normalmente a string após o fechamento da tag "span".
+                <br>
+                Segue o exemplo:
+            </p>
+        </div>
+    </div>
 
+    <div>
+        <h1 id="ex1Div">Meu nome é Gusttavo<div id="exdiv"> Ruy</div> Nascimento Ferreira</h1>
+        <h1 id="ex2Div">Meu nome é Gusttavo <span class="spans"> Ruy</span> Nascimento Ferreira</h1>
+    </div>
 
-    <h1>Meu nome é Gusttavo<div id="exdiv"> Ruy</div> Nascimento Ferreira</h1>
-    <h1>Meu nome é Gusttavo <span class="spans"> Ruy</span> Nascimento Ferreira</h1>
+    <br><br><br><br><br> <br><br><br>
 
+    <div class="allTexts">
+        <p>- A tag <strong>"style"</strong> (utilizada no head) serve como um "documento de css" para fazer
+            estilizar o html no próprio
+            doc html (para melhor organização aconselho a separar as partes de javascript e css em outros arquivos)</p>
+    </div>
 
-    <p>- A tag <strong id="style">"style"</strong> (utilizada no head) serve como um "documento de css" para fazer
-        estilizar o html no próprio
-        doc html (para melhor organização aconselho a separar as partes de javascript e css em outros arquivos)</p>
+    <div class="allTexts">
+        <p> - A tag <strong id="id">"id"</strong> funciona de maneira única, em outras palavras o id só pode
+            corresponder a
+            uma
+            tag,
+            já a tag <strong>"class"</strong> funciona para mais de uma tag. <br> Segue o exemplo, meu rei:</p>
+    </div>
+    <div>
+        <p><a href="#id" id="exid">id</a> <a href="#id" class="exclass">class</a> <a href="#id" class="exclass">class
+                2</a>
+        </p>
+    </div>
 
-    <p> - A tag <strong id="id">"id"</strong> funciona de maneira única, em outras palavras o id só pode corresponder a
-        uma
-        tag,
-        já a tag <strong>"class"</strong> funciona para mais de uma tag. Segue o exemplo, meu rei:</p> <br> <br>
+    <br><br><br><br><br><br>
 
+    <div class="allTexts">
+        <p>- Temos as seguintes tags para estilo em css, <strong id="colors">"background-color"</strong> para mudar a
+            cor do
+            fundo da
+            string, da mesma forma a tag <strong>"color"</strong> também muda a cor mas dessa vez apenas a cor do texto.
+        </p>
+    </div>
 
-    <p><a href="#id" id="exid">id</a> <a href="#id" class="exclass">class</a> <a href="#id" class="exclass">class 2</a>
-    </p>
+    <div class="allTexts">
+        <p> - Temos a tag de espaçamento entre as linhas, chamada de <strong id="line-height">"line-height"</strong></p>
+    </div>
 
-    <p>- Temos as seguintes tags para estilo em css, <strong id="colors">"background-color"</strong> para mudar a cor do
-        fundo da
-        string, da mesma forma a tag <strong>"color"</strong> também muda a cor mas dessa vez apenas a cor do texto.</p>
+    <div class="allTexts">
+        <p> - Temos outras tags de texto <em id="font">"font"</em> e suas variantes, em especial as seguintes versões
+            <strong>"font-size"</strong>
+            que serve para escolher o tipo de fonte do texto, a <strong>"font-weight"</strong> que serve para configurar
+            o
+            peso
+            do texto
+            (em outras palavras a grossura das letras), a <strong>"font-size</strong> que define o tamanho da fonte, e a
+            <strong>"font-variant"</strong>
+            que serve para modificar a forma em que as letras irão aparecer.
+        </p>
+    </div>
 
-    <p> - Temos a tag de espaçamento entre as linhas, chamada de <strong id="line-height">"line-height"</strong></p>
+    <div class="allTexts">
+        <p> - Temos duas tags de espaçamento, a tag <strong id="padding">"padding"</strong> que faz espaçamentos no
+            interior
+            da
+            string e a tag <strong>"margin"</strong>
+            que é utilizada para dar espaçamento ao redor da string. (Lembrando que há várias formas de definir o
+            tamanho, o
+            mais comum é o px {pixels})</p>
+    </div>
 
-    <p> - Temos outras tags de texto <em id="font">"font"</em> e suas variantes, em especial as seguintes versões
-        <strong>"font-size"</strong>
-        que serve para escolher o tipo de fonte do texto, a <strong>"font-weight"</strong> que serve para configurar o
-        peso
-        do texto
-        (em outras palavras a grossura das letras), a <strong>"font-size</strong> que define o tamanho da fonte, e a
-        <strong>"font-variant"</strong>
-        que serve para modificar a forma em que as letras irão aparecer.
-    </p>
+    <div class="allTexts">
+        <p> - Temos as tags <strong id="text">"text"</strong> julgo que as seguintes são as mais importantes, a tag
+            <strong>"text-align"</strong> é utilizada
+            para configurar a posição da string, também temos a tag <strong>"text-decoration"</strong> que serve para
+            configurar
+            a decoração do texto
+            ou para tirar a decoração de um link que por padrão vem com "underline".
+        </p>
+    </div>
 
-    <p> - Temos duas tags de espaçamento, a tag <strong id="padding">"padding"</strong> que faz espaçamentos no interior
-        da
-        string e a tag <strong>"margin"</strong>
-        que é utilizada para dar espaçamento ao redor da string. (Lembrando que há várias formas de definir o tamanho, o
-        mais comum é o px {pixels})</p>
+    <div class="allTexts">
+        <p>- Temos as tags <strong id="h1">h1,h2,h3,h4,h5,h6</strong>. Que de forma crescente diminuem o tamanho da
+            fonte.
+        </p>
+    </div>
 
+    <div class="allTexts">
+        <p> - Temos a tag <strong id="p">"p"</strong> que faz parágrafos.</p>
+    </div>
 
-    <p> - Temos as tags <strong id="text">"text"</strong> julgo que as seguintes são as mais importantes, a tag
-        <strong>"text-align"</strong> é utilizada
-        para configurar a posição da string, também temos a tag <strong>"text-decoration"</strong> que serve para
-        configurar
-        a decoração do texto
-        ou para tirar a decoração de um link que por padrão vem com "underline".
-    </p>
+    <div class="allTexts">
+        <p> - Temos a tag <strong id="br">"br"</strong> que corta a linha a partir dela.</p>
+    </div>
 
-    <p>- Temos as tags <strong id="h1">h1,h2,h3,h4,h5,h6</strong>. Que de forma crescente diminuem o tamanho da fonte.
-    </p><br>
+    <div class="allTexts">
+        <p> - Para mudança de estilo do texto temos os comandos <strong id="strong">"strong"</strong> para deixar em
+            negrito
+            e <em><strong>"em"</strong></em> para deixar o texto em italico.</p>
+    </div>
 
+    <div class="allTexts">
+        <p> - Temos as tags de listas ordenadas e desordenadas sendo elas,respectivamente: <strong id="ul">"ol"</strong>
+            e
+            <strong>"ul"</strong>, para abrir uma linha na lista utilizamos a tag <strong>"li"</strong>
+        </p>
+    </div>
 
-    <p> - Temos a tag <strong id="p">"p"</strong> que faz parágrafos.</p>
+    <div class="allTexts">
+        <p><strong id="a">Links externos e internos</strong></p>
+    </div>
 
+    <div class="allTexts">
+        <p> - Temos a tag <strong>"a"</strong> para fazer um link dentro do site, dentro dela podemos colar um
+            <strong>"id"</strong>
+            ou um <strong>"class"</strong> para identificarmos esse "a" para fazermos o estilo dele dentro de um doc
+            .css
+            ou dentro do <strong>"style"</strong> no "head". (exemplo de link interno é a lista do inicio da página) A
+            seguir
+            um exemplo de um link externo (uma imagem)
+        </p>
+    </div>
 
-    <p> - Temos a tag <strong id="br">"br"</strong> que corta a linha a partir dela.</p>
+    <div class="allTexts">
+        <p> - Temos também a tag <strong id="img">"img"</strong></p>
+    </div>
+    
+    <img id="eximg"src="img/cachorro com vergonha" alt="cachorro com vergonha">
 
-
-    <p> - Para mudança de estilo do texto temos os comandos <strong id="strong">"strong"</strong> para deixar em negrito
-        e <em><strong>"em"</strong></em> para deixar o texto em italico.</p>
-
-
-    <p> - Temos as tags de listas ordenadas e desordenadas sendo elas,respectivamente: <strong id="ul">"ol"</strong> e
-        <strong>"ul"</strong>, para abrir uma linha na lista utilizamos a tag <strong>"li"</strong>
-    </p>
-
-
-    <p><strong id="a">Links externos e internos</strong></p>
-
-
-    <p> - Temos a tag <strong>"a"</strong> para fazer um link dentro do site, dentro dela podemos colar um
-        <strong>"id"</strong>
-        ou um <strong>"class"</strong> para identificarmos esse "a" para fazermos o estilo dele dentro de um doc .css
-        ou dentro do <strong>"style"</strong> no "head". (exemplo de link interno é a lista do inicio da página) A
-        seguir
-        um exemplo de um link externo (uma imagem)
-    </p>
-
-
-
-    <p> - Temos também a tag <strong id="img">"img"</strong></p>
-    <br>
-    <img src="img/cachorro com vergonha" alt="cachorro com vergonha">
-    <br>
+<div class="allTexts">
     <p> Acho que é auto explicativo</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 </body>
 
