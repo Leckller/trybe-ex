@@ -45,6 +45,8 @@
                 <li><a href="#ex-overflow">Tag overflow</a></li>
                 <li><a href="#border-tags">Tags border</a></li>
                 <li><a href="#display-tags">Tag display</a></li>
+                <li><a href="#pseudo-classes">Pseudo-classes</a></li>
+                <li><a href="#maneiras-de-especificar">Maneiras de especificar</a></li>
             </ul>
         </div>
     </div>
@@ -226,21 +228,67 @@
             largura(width) é alterada.</p>
     </div>
     <div id="border-tags">
-        <p class="allTexts"> Temos varias funções da tag <strong>"border"</strong>, como a "border-width" para controlar a largura da borda, tendo o valor "medium" por padrão. Temos também a "border-style" por padrão vem configurada como "none", por isso não vemos nd enquanto não alterar essa propriedade. Também temos o "border-color" que tem como padrão o "currentcolor", esse valor deixa a cor da borda como o mesmo do elemento.</p>
-    </div>  
+        <p class="allTexts"> Temos varias funções da tag <strong>"border"</strong>, como a "border-width" para controlar
+            a largura da borda, tendo o valor "medium" por padrão. Temos também a "border-style" por padrão vem
+            configurada como "none", por isso não vemos nd enquanto não alterar essa propriedade. Também temos o
+            "border-color" que tem como padrão o "currentcolor", esse valor deixa a cor da borda como o mesmo do
+            elemento.</p>
+    </div>
     <div id="display-tags">
         <p class="allTexts">
-            Temos a tag <strong>"display"</strong> que serve para alterar a maneira como os conteiners se comportam dentro de uma página, como alterar o comportamento de uma div que é por "bloco" para o comportamento de um span que é "inline".
+            Temos a tag <strong>"display"</strong> que serve para alterar a maneira como os conteiners se comportam
+            dentro de uma página, como alterar o comportamento de uma div que é por "bloco" para o comportamento de um
+            span que é "inline".
         </p>
     </div>
-    <div id="tags-de-espacamento">
-        <p class="allTexts"> Temos as tags de espaçamento dos elementos, como a tag <strong>"position"</strong> que pode ter os valores <strong>"fixed"</strong> para fixar aquele objeto na tela de forma que possa "scrollar" e aquele objeto seguir fixo naquela parte. Também temos o valor <strong>"absolute"</strong>, que de forma simples deixa aquele objeto como absoluto e posicionado em primeiro e à cima dos demais elementos (Lembrando que as img são por padrão "inline"). Para solucionar esse problema dos objetos um em cima do outro devido o valor absolute temos a tag <strong>"z-index"</strong> que com valores numerados colocamos quem aparece primeiro(embaixo de todos) a partir do 1. Também temos a tag <strong>"float"</strong> para flutuar elementos na página, fazendo com que os demais elementos, como os textos, o contornem.</p>
-        <div>
-            <img src="" alt="">
+
+    <div>
+        <div id="tags-de-espacamento">
+            <p class="allTexts"> Temos as tags de espaçamento dos elementos, como a tag <strong>"position"</strong> que
+                pode
+                ter os valores <strong>"fixed"</strong> para fixar aquele objeto na tela de forma que possa "scrollar" e
+                aquele objeto seguir fixo naquela parte. Também temos o valor <strong>"absolute"</strong>, que de forma
+                simples deixa aquele objeto como absoluto e posicionado em primeiro e à cima dos demais elementos
+                (Lembrando
+                que as img são por padrão "inline"). Para solucionar esse problema dos objetos um em cima do outro
+                devido o
+                valor absolute temos a tag <strong>"z-index"</strong> que com valores numerados colocamos quem aparece
+                primeiro(embaixo de todos) a partir do 1. Também temos a tag <strong>"float"</strong> para flutuar
+                elementos
+                na página, fazendo com que os demais elementos, como os textos, o contornem.</p>
+            <div id="ex-espacamento">
+                <img src="img/gato dormindo anime.jpeg" id="gato-anime" alt=""><img src="img/gato deitado"
+                    id="gato-deitado" alt="">
+                <h2>Gatinho</h2>
+
+            </div>
+        </div>
+        <div id="gatinhos-part">
+            <p class="text-gatinhos">gatinhosgatinhosgatinhosgatinhos
+            </p>
+            <img id="gato-danado" src="img/gato danado.png" alt="">
+            <p id="text-gatinhos2">
+                gatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhosgatinhos
+            </p>
         </div>
     </div>
-    
-
+    <br>
+    <div id="pseudo-classes">
+        <p class="allTexts"> Dentro do CSS temos as "pseudo-classes" que funcionam da seguinte forma: li:(valor), temos
+            alguns valores como o <strong>"hover</strong> que serve para adicionarmos alguma mudança quando passarmos
+            com o mouse por cima. seguindo essa linha tbm temos o <strong>"active"</strong> que faz uma alteração quando
+            clicamos naquele evento (quando "ativamos").<br> A seguir um exemplo disso: </p>
+            <ol><li>clica aqui, doidao</li></ol>
+<p>tem q ler sobre as pseudo classes!</p>
+    </div>
+    <br>
+    <div id="maneiras-de-especificar">
+        <p class="allTexts">
+            Seguinte, temos algumas maneiras de combinar classes, e temos uma maneira de especificar a parte em que queremos estilizar através de descendentes. Podemos utilizar mais de uma classe nas tags de html, apenas separando elas com um "espaço" dentro da class, por exemplo: <br>
+            class="modelo-1 modelo-2"<br> dessa forma colocamos duas classes com configurações diferentes em uma tag. Agora dentro do CSS, podemos especificar o local no qual iremos estilizar, utilizando uma lógica de "descendentes", por exemplo: <br>Uma lista ordenada que tem linhas e um paragrafo, para especificar ela fazemos numa ordem de pai filho neto -> -> -> ol li p <br> Dessa forma especificamos que para todos os paragrafos que estão dentro de uma "li" que está dentro de uma "ol" tenham os valores que serão adicionados dentro das chaves. <br>
+            Extra! podemos utilizar mais especificações utilizando classes, da seguinte forma: <br>ol.modelo-1 li p<br> Dessa forma especificamos que para todas os paragrafos que estiverem dentro de uma linha e que estiverem dentro de uma lista ordenada e que tiverem a class "modelo-1" recebam os valores dentro das chaves. Mo role isso lendo, mas é bem simples na prática.
+        </p>
+    </div>
 </body>
 
 </html>
