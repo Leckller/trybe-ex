@@ -42,6 +42,9 @@
                 <li><a href="#text">TAGS text</a></li>
                 <li><a href="#line-height">TAG line</a></li>
                 <li><a href="#div">TAGS div | span</a></li>
+                <li><a href="#ex-overflow">Tag overflow</a></li>
+                <li><a href="#border-tags">Tags border</a></li>
+                <li><a href="#display-tags">Tag display</a></li>
             </ul>
         </div>
     </div>
@@ -182,12 +185,61 @@
     <div class="allTexts">
         <p> - Temos também a tag <strong id="img">"img"</strong></p>
     </div>
-    
-    <img id="eximg"src="img/cachorro com vergonha" alt="cachorro com vergonha">
+    <div class="img-center">
+        <img id="eximg" src="img/cachorro com vergonha" alt="cachorro com vergonha">
+    </div>
+    <div class="allTexts">
+        <p> Acho que é auto explicativo, porém vale ressaltar que as img tem comportamento "inline".</p>
+    </div>
 
-<div class="allTexts">
-    <p> Acho que é auto explicativo</p>
-</div>
+    <div class="allTexts">
+        <p>Temos a tag overflow que é utilizada para acessar o conteúdo excedido, para que conseguimos acessa-lo com uma
+            barra, podemos configurar utilizando algumas propriedades da propriedade "overflow" como por exemplo o y e x
+            para configurarmos a vertical e a horizontal.<br>Segue o exemplo:</p>
+    </div>
+    <div id="ex-overflow">
+        <img src="img/pedepano.jpg" alt="pé de pano">
+        <p id="overflow-text">
+            Hoje é um dia especial, pois é o dia em que eu posso expressar o quanto eu te amo. Desde o dia em que nos
+            conhecemos, eu soube que você era a pessoa certa para mim. Você é o meu melhor amigo, o meu parceiro e o meu
+            companheiro. Com você, eu me sinto segura, feliz e cuidada.Hoje é um dia especial, pois é o dia em que eu
+            posso expressar o quanto eu te amo. Desde o dia em que nos conhecemos, eu soube que você era a pessoa certa
+            para mim. Você é o meu melhor amigo, o meu parceiro e o meu companheiro. Com você, eu me sinto segura, feliz
+            e cuidada.Hoje é um dia especial, pois é o dia em que eu posso expressar o quanto eu te amo. Desde o dia em
+            que nos conhecemos, eu soube que você era a pessoa certa para mim. Você é o meu melhor amigo, o meu parceiro
+            e o meu companheiro. Com você, eu me sinto segura, feliz e cuidada.Hoje é um dia especial, pois é o dia em
+            que eu posso expressar o quanto eu te amo. Desde o dia em que nos conhecemos, eu soube que você era a pessoa
+            certa para mim. Você é o meu melhor amigo, o meu parceiro e o meu companheiro. Com você, eu me sinto segura,
+            feliz e cuidada.Hoje é um dia especial, pois é o dia em que eu posso expressar o quanto eu te amo. Desde o
+            dia em que nos conhecemos, eu soube que você era a pessoa certa para mim. Você é o meu melhor amigo, o meu
+            parceiro e o meu companheiro. Com você, eu me sinto segura, feliz e cuidada.Hoje é um dia especial, pois é o
+            dia em que eu posso expressar o quanto eu te amo. Desde o dia em que nos conhecemos, eu soube que você era a
+            pessoa certa para mim. Você é o meu melhor amigo, o meu parceiro e o meu companheiro. Com você, eu me sinto
+            segura, feliz e cuidada.Hoje é um dia especial, pois é o dia em que eu posso expressar o quanto eu te amo.
+            Desde o dia em que nos conhecemos, eu soube que você era a pessoa certa para mim. Você é o meu melhor amigo,
+            o meu parceiro e o meu companheiro. Com você, eu me sinto segura, feliz e cuidada.
+        </p>
+        <p class="allTexts">Nota! pelo visto o comportamento no eixo x não é muito relevante para textos, e sim no eixo
+            y que notamos uma nítida diferença. Com imagens fica mais nítido a diferença do overflow-x. é uma questão de
+            lógica mesmo, as imagens não se alteram com a altura e sim nos dois lados para não perder resolução, logo é
+            algo mais fixo e não se altera com mais linhas, já os textos se dividem mais com a altura de acordo em que a
+            largura(width) é alterada.</p>
+    </div>
+    <div id="border-tags">
+        <p class="allTexts"> Temos varias funções da tag <strong>"border"</strong>, como a "border-width" para controlar a largura da borda, tendo o valor "medium" por padrão. Temos também a "border-style" por padrão vem configurada como "none", por isso não vemos nd enquanto não alterar essa propriedade. Também temos o "border-color" que tem como padrão o "currentcolor", esse valor deixa a cor da borda como o mesmo do elemento.</p>
+    </div>  
+    <div id="display-tags">
+        <p class="allTexts">
+            Temos a tag <strong>"display"</strong> que serve para alterar a maneira como os conteiners se comportam dentro de uma página, como alterar o comportamento de uma div que é por "bloco" para o comportamento de um span que é "inline".
+        </p>
+    </div>
+    <div id="tags-de-espacamento">
+        <p class="allTexts"> Temos as tags de espaçamento dos elementos, como a tag <strong>"position"</strong> que pode ter os valores <strong>"fixed"</strong> para fixar aquele objeto na tela de forma que possa "scrollar" e aquele objeto seguir fixo naquela parte. Também temos o valor <strong>"absolute"</strong>, que de forma simples deixa aquele objeto como absoluto e posicionado em primeiro e à cima dos demais elementos (Lembrando que as img são por padrão "inline"). Para solucionar esse problema dos objetos um em cima do outro devido o valor absolute temos a tag <strong>"z-index"</strong> que com valores numerados colocamos quem aparece primeiro(embaixo de todos) a partir do 1. Também temos a tag <strong>"float"</strong> para flutuar elementos na página, fazendo com que os demais elementos, como os textos, o contornem.</p>
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+    
 
 </body>
 
